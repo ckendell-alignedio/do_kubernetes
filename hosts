@@ -1,0 +1,16 @@
+[masters]
+master ansible_host= ansible_user=root
+
+[masters:vars]
+ansible_ssh_private_key_file=
+
+[workers]
+worker1 ansible_host= ansible_user=root
+worker2 ansible_host= ansible_user=root
+worker3 ansible_host= ansible_user=root
+
+[workers:vars]
+ansible_ssh_private_key_file=
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
